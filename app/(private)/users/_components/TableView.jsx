@@ -1,8 +1,8 @@
 export default function TableView({ list, handleSort, sortOrder, sortKey }) {
   return (
-    <div class='relative overflow-x-auto'>
-      <table class='w-full text-sm text-left rtl:text-right text-gray-500 '>
-        <thead class='text-xs text-gray-700 uppercase bg-gray-50'>
+    <div className='relative overflow-x-auto'>
+      <table className='w-full text-sm text-left rtl:text-right text-gray-500 '>
+        <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
           <tr>
             <th
               scope='col'
@@ -17,7 +17,7 @@ export default function TableView({ list, handleSort, sortOrder, sortKey }) {
             >
               Age {sortKey === 'age' && (sortOrder === 'asc' ? '▲' : '▼')}
             </th>
-            <th scope='col' class='px-6 py-3'>
+            <th scope='col' className='px-6 py-3'>
               Occupation
             </th>
           </tr>
@@ -26,15 +26,15 @@ export default function TableView({ list, handleSort, sortOrder, sortKey }) {
           {list.map((user, index) => {
             let { name, age, occupation } = user
             return (
-              <tr class='bg-white border-b ' key={index}>
+              <tr className='bg-white border-b ' key={index}>
                 <th
                   scope='row'
-                  class='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '
+                  className='px-6 py-4 font-medium text-gray-900 whitespace-nowrap '
                 >
                   {name}
                 </th>
-                <td class='px-6 py-4'>{age}</td>
-                <td class='px-6 py-4'>{occupation}</td>
+                <td className='px-6 py-4'>{age}</td>
+                <td className='px-6 py-4'>{occupation}</td>
               </tr>
             )
           })}
