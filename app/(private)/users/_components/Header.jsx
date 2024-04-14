@@ -8,11 +8,11 @@ export default function Header({
   search
 }) {
   return (
-    <div className='flex justify-between items-center gap-4'>
-      <h1 className='text-2xl mb-4'>Users </h1>
-      <div className='flex gap-4'>
+    <div className='flex flex-wrap justify-center sm:justify-between items-center gap-2 sm:gap-4'>
+      <h1 className='text-2xl text-center mb-4'>Users </h1>
+      <div className='flex gap-4  flex-wrap sm:flex-nowrap lg:flex-nowrap justify-center'>
         {/* Toggle switch */}
-        <div className='flex items-center '>
+        <div className='flex items-center  '>
           <ToggleSwitch checked={view === 'card'} onChange={handleViewSwitch} />
           <span className='ml-2'>
             {view === 'table' ? 'Switch to Card View' : 'Switch to Table View'}
@@ -22,7 +22,7 @@ export default function Header({
         <input
           type='text'
           placeholder='Search by name'
-          className='border p-2 max-w-44 '
+          className='border p-2 w-full sm:max-w-44  '
           value={search}
           onChange={handleSearch}
         />
