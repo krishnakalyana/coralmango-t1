@@ -9,13 +9,12 @@
 
 ## Features
 
-- [Utilizes Next.js 14 to enable both client-side and server-side rendering.]
-- [Incorporates Tailwind CSS for modern styling and responsive design.]
+- Utilizes Next.js 14 to enable both client-side and server-side rendering.
+- Incorporates Tailwind CSS for modern styling and responsive design.
 
 ## Requirements
 
-- [Ensure you have the latest version of Node.js installed (preferably
-  v21.6.2).]
+- Ensure you have the latest version of Node.js installed (preferably v21.6.2).
 
 ## Installation
 
@@ -30,11 +29,21 @@ To install the project, follow these steps:
    cd coralmango-t1
    ```
 3. Install the required dependencies:
+
    ```shell
-   [npm install  // install all dependencies ]
-   [npm run dev  // start development server ]
-   [npm run build  // create a production build ]
-   [npm start  // start the production build ]
+   npm install  // install all dependencies
+   ```
+
+   ```shell
+   npm run dev  // start development server
+   ```
+
+   ```shell
+   npm run build  // create a production build
+   ```
+
+   ```shell
+   npm start  // start the production build
    ```
 
 ## Contact
