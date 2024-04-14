@@ -48,5 +48,3 @@ Check out our
 details.
 
 ## todo
-
-## create a custom hook for api Call
